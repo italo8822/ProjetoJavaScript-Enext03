@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    background: linear-gradient(#02afff, #00dbf8)
+}
+
+.container-temp {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 122px;
+    margin: -25px;
+    margin-top: -65px;
+}
+
+@keyframes float {
+    0% {
+      transform: translatey(2px);
+    }
+    50% {
+      transform: translatey(-5px);
+    }
+    100% {
+      transform: translatey(2px);
+    }
+}
+
+city {
+    font-size: 25px;
+}
+.date {
+    font-size: 25px;
+}
+
+hr {
+    border: px;
+    border-top: 2px solid black;
+}
+
+.container-img{
+    margin: -25px;
+    margin-top: -65px;
+}
+
+.modal-container {
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(#141e30, #243b55);
+    width: 30vw;
+    height: 78vh;
+    color: white;
+    border-radius: 30px;
+}
+.btnModal {
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+.active {
+    display: flex;
+}
+
+.active .modal {
+    animation: modal .9s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.weather {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.modal span {
+    margin: 30px;
+}
+
+.btns {
+    display: center;
+}
+
+.btns button {
+    font-size: medium;
+    padding: 10px;
+    border: black;
+    color: white;
+    cursor: pointer;
+    justify-content: right;
+}
+
+.btnSair {
+    background-color: blue ;
+}
+
+@media (max-width: 500px) {
+    .modal {
+        padding: 10px;
+        width: 80%;
+    }
+
+    span,
+    .btns button {
+        font-size: small;
+    }
+}

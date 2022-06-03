@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Trabanho enext javascript">
+  <title> :) Desafio JavaScript Enext :)</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="container-fluid p-4 mt-0 d-flex justify-content-center">
+    <div class="card text-center" style="width: 61rem;">
+
+      <div class="card-header text-dark"> 
+        <div class="input-group">
+          <input type="text" class="form-control bg-light" placeholder="Em qual Cidade você está localizado?">
+          <div class="input-group-append"> <button type="button" class="btn text-dark" type="button" id="button"> > </button> </div>
+        </div> 
+      </div>
+
+      <div class="card-body">
+        <div class="container-img"> <img src="./icons/unknown.png"> </div>
+        <div class="container-temp"><div>X</div><span>°c</span></div>
+        <div class="city">Xxxxxxx, XX</div>
+        <div class="date">Xxxxxxx, 0 Xxxxxxx 0000</div>
+        <div class="weather py-2">---------</div>
+        <div class="low-high">Max & Min</div>
+        <hr />
+        <!-- -->
+        <button class="btnModal" onclick="openModal()">Salvar Localização</button>
+        <div class="modal-container">
+          <div class="modal">
+            <h4>Temperaturas salvas</h4>
+            <span class="modal-body span"> "" </span>
+            <div class="btns">
+              <button class="btnSair" onclick="closeModal()">Sair</button>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
